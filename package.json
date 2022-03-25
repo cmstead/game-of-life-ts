@@ -1,0 +1,20 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "Game of life starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Chris Stead",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4"
+  },
+  "dependencies": {
+    "clear": "^0.1.0",
+    "ts-node": "^10.7.0"
+  }
+}
