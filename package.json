@@ -2,9 +2,10 @@
   "name": "game-of-life",
   "version": "1.0.0",
   "description": "Game of life starter",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node index.ts"
   },
   "author": "Chris Stead",
   "license": "MIT",
