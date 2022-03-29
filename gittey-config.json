@@ -24,6 +24,15 @@
         }
     },
     "verboseMode": false,
-    "aliases": [],
+    "aliases": [
+        {
+            "name": "pull",
+            "command": "gittey commit; git pull"
+        },
+        {
+            "name": "push",
+            "command": "gittey pull; git push"
+        }
+    ],
     "collaborators": []
 }
