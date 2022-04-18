@@ -4,7 +4,8 @@
   "description": "Game of life starter",
   "main": "index.ts",
   "scripts": {
-    "test": "jest",
+    "jest": "jest",
+    "test": "npm run jest & gittey commit",
     "start": "ts-node index.ts"
   },
   "author": "Chris Stead",
