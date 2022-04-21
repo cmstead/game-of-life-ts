@@ -7,7 +7,7 @@ export class Screen implements IScreen {
         clearScreen();
 
         displayDetail
-            .map(line => line.join())
+            .map(line => line.join(''))
             .forEach(line => console.log(line));
     }
 }
