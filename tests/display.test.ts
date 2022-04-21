@@ -1,23 +1,17 @@
-import { IScreen } from "../display/displayTypes";
 import { Display } from "../display/display";
 
 import { getBlankScreen } from "../display/setup";
-
-class ScreenFake implements IScreen {
-    displayDetail: string[][];
-
-    paint(displayDetail: string[][]) {
-        this.displayDetail = displayDetail;
-    }
-}
+import { buildDisplayFixture, ScreenFake } from "./fixtures/displayFixtureFactory";
 
 describe('display', () => {
     let screenFake: ScreenFake;
     let display: Display;
 
     beforeEach(() => {
-        screenFake = new ScreenFake();
-        display = new Display(screenFake);
+        const displayFixture = buildDisplayFixture();
+
+        screenFake = displayFixture.screenFake;
+        display = displayFixture.display;
     });
 
     it('prints a blank screen when no characters are set', () => {
