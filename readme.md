@@ -36,3 +36,4 @@ This purpose of this project is provide a foundation for creating Conway's Game 
 * [An introduction to Mob Programming](https://www.youtube.com/watch?v=8cy64qkgTyI)
 * [The Core 6 Refactorings](https://arlobelshee.com/the-core-6-refactorings/)
 * [The 7 Stages of Naming (Naming is a Process)](https://www.digdeeproots.com/articles/on/naming-process/)
+* [Mob Programming RPG](https://github.com/willemlarsen/mobprogrammingrpg)
