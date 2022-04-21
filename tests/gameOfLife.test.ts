@@ -38,4 +38,18 @@ describe('Game Of Life Rules', () => {
         expect(board[0][0]).toBe('o');
 
     })
+    it('dies when cell has four neighbours', () => {
+        gameOfLife.init(3, 3);
+        const board = gameOfLife.getBoard();
+        gameOfLife.setCell(0, 0, 'o');
+        gameOfLife.setCell(0, 1, 'o');
+        gameOfLife.setCell(1, 0, 'o');
+        gameOfLife.setCell(1, 1, 'o');
+        gameOfLife.setCell(2, 1, 'o');
+
+        gameOfLife.run()
+        
+        expect(board[1][1]).toBe(' ');
+
+    })
 })
