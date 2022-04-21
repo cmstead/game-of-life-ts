@@ -25,4 +25,17 @@ describe('Game Of Life Rules', () => {
         
         expect(board[0][0]).toBe('o');
     })
+    it('survives when cell has three neighbours', () => {
+        gameOfLife.init(2, 2);
+        const board = gameOfLife.getBoard();
+        gameOfLife.setCell(0, 0, 'o');
+        gameOfLife.setCell(0, 1, 'o');
+        gameOfLife.setCell(1, 0, 'o');
+        gameOfLife.setCell(1, 1, 'o');
+
+        gameOfLife.run()
+        
+        expect(board[0][0]).toBe('o');
+
+    })
 })
